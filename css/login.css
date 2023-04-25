@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --color1: #bacbe8;
+    --color2: #d1d9e8;
+    --color3: #9c9ea1;
+    --color4: #7590bd;
+    --color5: #425166;
+}
+
+body {
+    background-image: linear-gradient(var(--color1), var(--color2));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color4);
+    color: var(--color1);
+    width: 450px;
+    height: 500px;
+    margin-top:20px ;
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--color5);
+    border-radius: 1rem;
+
+}
+
+.container h2 {
+    margin-top: 15px;
+    font-size: 2.2rem;
+    font-style: oblique;
+    text-shadow: 0.5rem 0.5rem 0.5rem var(--color5);
+}
+
+
+.container label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+    transform: translate(2rem);
+    transition: transform 0.5s;
+  
+}
+
+.container input {
+    width: 80%;
+    margin-bottom: 2rem;
+    margin-top: 10px;
+    background: none;
+    color: var(--color1);
+    font-size: 1.3rem;
+    border: none;
+    border-bottom: 0.1rem solid var(--color1);
+    outline: 0;
+
+}
+
+.container button {
+    width: 350px;
+    height:30px;
+    margin-top: 20px;
+    font-size:20px;
+    font-style: oblique;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--color1);
+    background-color: var(--color5);
+    border: none;
+    border-radius: 9px;
+ 
+}
+
+.container button:hover {
+    transition: 0.9s;
+   background-color: var(--color1);
+   color: var(--color5);
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.register a {
+    color: var(--color1);
+    text-decoration: none;
+}
+
+.register a:hover {
+    transition: 0.9s;
+    color: var(--color5);
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    position: relative;
+    bottom: 4.2rem;
+    margin-left: 65%;
+}
+#msgError{
+    margin-top: 15px;
+}

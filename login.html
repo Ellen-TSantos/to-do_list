@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/js/login.js" defer></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        
+        <title>Pagina login</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2> Login To-do List </h2>
+
+        <div id="msgError"></div>
+
+        <label id="userLabel" for="usuario">Usuário</label>
+        <input type="text" id="usuario" placeholder="" required>
+
+        <label id="labelSenha" for="senha">Senha</label>
+        <input type="senha" id="senha" placeholder="" required>
+        <span class="material-symbols-outlined">
+            visibility_off
+        </span>
+        <button onclick="entrar()">Entrar</button>
+    
+        <div class="register">
+            <p>Não uma conta ?</p>
+            <a href="http://127.0.0.1:5500/register.html">Cadastre-se</a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
